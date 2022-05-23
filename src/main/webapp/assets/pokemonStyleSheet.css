@@ -1,0 +1,126 @@
+.big-btn {
+	width: 90px;
+	height: 40px;
+}
+
+body {
+	margin: 0;
+	background: #fccaf6;
+	text-align: center;
+	font-family: 'Permanent Marker', cursive;
+}
+
+.header {
+	height: 75px;
+	width: 100%;
+	background: #93bdf0;
+	line-height: 50px;
+	text-align: center;
+	color: #fff;
+}
+
+.content {
+	background: #fff;
+	height: calc(100vh - 110px);
+	border-top-right-radius: 50% 60px;
+	border-top-left-radius: 50% 60px;
+	padding: 100px 20px 0 20px;
+}
+
+img.logo {
+	max-width: 7%;
+	height: auto;
+}
+
+/* Style the top navigation bar */
+.topnav {
+	overflow: hidden;
+	background-color: #fccaf6;
+}
+
+/* Style the topnav links */
+.topnav a {
+	float: left;
+	display: block;
+	color: black;
+	text-align: center;
+	padding: 0px 16px;
+	text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+	background-color: #ddd;
+	color: black;
+}
+
+.selectTrainer {
+	font-family: Consolas, monospace;
+}
+
+.newTrainerBtn {
+	display: inline-block;
+	padding: 100px 35px;
+	text-align: center;
+	text-decoration: none;
+	color: #ffffff;
+	background-color: #fccaf6;
+	border-radius: 6px;
+	outline: none;
+}
+
+.lookUpBtn {
+	display: inline-block;
+	padding: 100px 20px;
+	text-align: center;
+	text-decoration: none;
+	color: #ffffff;
+	background-color: #93bdf0;
+	border-radius: 6px;
+	outline: none;
+}
+
+.removeBtn {
+	background-color: #93bdf0; /* Green background */
+	border: 1px solid black; /* black border */
+	color: black; /* White text */
+	padding: 9px 20px; /* Some padding */
+	cursor: pointer; /* Pointer/hand icon */
+	width: 100%; /* Set a width if needed */
+	display: block; /* Make the buttons appear below each other */
+}
+
+.returnBtn {
+	background-color: #fccaf6; /* Green background */
+	border: 1px solid black; /* black border */
+	color: black; /* White text */
+	padding: 9px 20px; /* Some padding */
+	cursor: pointer; /* Pointer/hand icon */
+	width: 100%; /* Set a width if needed */
+	display: block; /* Make the buttons appear below each other */
+}
+
+.btn-group button:not(:last-child) {
+	border-bottom: none; /* Prevent double borders */
+}
+
+/* Add a background color on hover */
+.btn-group-vertical button:hover {
+	background-color: #a64852;
+}
+
+.input {
+	bottom: 5px;
+	left: 50%;
+	width: 50px;
+	margin-left: -25px;
+}
+
+.chosen-mon {
+	width: 100%;
+	height: 100px;
+}
+
+.select-mon {
+	width: 100%;
+}
