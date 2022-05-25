@@ -5,6 +5,7 @@ import java.util.List;
 
 import javax.persistence.EntityManager;
 import javax.persistence.EntityTransaction;
+import javax.persistence.PersistenceUnit;
 import javax.persistence.Query;
 
 import models.Bannedpokemon;
@@ -14,6 +15,7 @@ import models.Team;
 import models.Trainer;
 
 public class TeamDao {
+	  @PersistenceUnit(unitName="RotoReg")
 	
 	public void addTeam(Team team) throws ClassNotFoundException{
 		EntityManager em = DBUtil.getEmFactory().createEntityManager();
@@ -80,7 +82,7 @@ public class TeamDao {
 	public List<Team> getAllTeamsByYear(int year) throws Exception{
 		EntityManager em = DBUtil.getEmFactory().createEntityManager();
         try{
-            List<Team> item = em.createNamedQuery("findAllByYear", Team.class).setParameter("year", year).getResultList();
+            List<Team> item = em.createNamedQuery("Team.findAllByYear", Team.class).setParameter("year", year).getResultList();
             return item;
         }
         finally{
